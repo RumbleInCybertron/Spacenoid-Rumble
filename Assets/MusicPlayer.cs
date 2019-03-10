@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2.5f;
-    AudioSource audioSource;
 
-    // Start is called before the first frame update
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     void Start()
     {
        Invoke("LoadFirstScene", levelLoadDelay);
-       audioSource = GetComponent<AudioSource>();   
     }
 
     void LoadFirstScene()
