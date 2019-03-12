@@ -6,6 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 4f;
+    [Tooltip("In m")] [SerializeField] float xRange = 4f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,10 @@ public class Player : MonoBehaviour
     void Update()
     {
         float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-        float xOffsetThisFrame = xSpeed * xThrow * Time.deltaTime;
-        print(xOffsetThisFrame);
+        float xOffset = xThrow * xSpeed * Time.deltaTime;
+        float rawXPos = transform.localPosition.x + xOffset;
+        float clampedXPos = Mathf.Clamp(rawXPos, -xRange, xRange);
+
+        transform.localPosition = new Vector3(clampedXPos, transform.localPosition.y, transform.localPosition.z);
     }
 }
