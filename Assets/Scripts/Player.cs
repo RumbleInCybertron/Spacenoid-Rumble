@@ -23,6 +23,12 @@ public class Player : MonoBehaviour
         
     }
 
+    // TODO create code for triggering enemies, obstacles, terrain, etc
+    private void OnTriggerEnter(Collider other)
+    {
+        print("Player triggered something.");
+    }
+
     // Update is called once per frame
     void Update()
     {
