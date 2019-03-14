@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2.5f;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
-
     void Start()
     {
-       Invoke("LoadFirstScene", levelLoadDelay);
+        Invoke("LoadFirstScene", levelLoadDelay);
     }
 
     void LoadFirstScene()
