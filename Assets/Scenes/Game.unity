@@ -527,6 +527,43 @@ Transform:
   m_Father: {fileID: 1841942801}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1190474160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7569455022148335042, guid: fd71166101c653b41b103aba4b3f264f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7570435238792993438}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190474161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190474160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7971e9e74a02fe4eb043f930c2a8f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1190474162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190474160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317bef80897ecda4e8eeb2c39c8bdddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlSpeed: 20
+  xRange: 4
+  yRange: 3
+  posPitchFactor: -5
+  posYawFactor: 5
+  ctrlPitchFactor: -25
+  ctrlRollFactor: -30
 --- !u!1001 &1302197150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1418,6 +1455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 153597119771454011, guid: fd71166101c653b41b103aba4b3f264f, type: 3}
+    - {fileID: 7857907934233390948, guid: fd71166101c653b41b103aba4b3f264f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd71166101c653b41b103aba4b3f264f, type: 3}
 --- !u!1001 &7957448157299631594
 PrefabInstance:
