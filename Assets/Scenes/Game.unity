@@ -279,6 +279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1 &380326044
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,8 +423,9 @@ GameObject:
   - component: {fileID: 599754227}
   - component: {fileID: 599754229}
   - component: {fileID: 599754228}
+  - component: {fileID: 599754230}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,8 +447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -762.4, y: -487.1}
-  m_SizeDelta: {x: -1524.6, y: -974.2}
+  m_AnchoredPosition: {x: -762.4, y: -493.3}
+  m_SizeDelta: {x: -1524.6, y: -986.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &599754228
 MonoBehaviour:
@@ -490,6 +492,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599754226}
   m_CullTransparentMesh: 0
+--- !u!114 &599754230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599754226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b174d6145d9469e43bcf64877a696800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &649180406 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -510,6 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1001 &694036680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -691,6 +706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1 &1138063320 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1249553951781956, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
@@ -711,6 +727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1 &1188967495
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1001 &1302197150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -894,6 +912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 8160306558766726687, guid: 759295533d5bfd7429fee2353c98c42a, type: 3}
   parent: {fileID: 758922268}
+  scorePerHit: 1234
 --- !u!1 &1331094865
 GameObject:
   m_ObjectHideFlags: 0
